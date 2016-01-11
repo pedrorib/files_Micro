@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2887,        103]
-NotebookOptionsPosition[      2436,         82]
-NotebookOutlinePosition[      2773,         97]
-CellTagsIndexPosition[      2730,         94]
+NotebookDataLength[      3277,        109]
+NotebookOptionsPosition[      2816,         88]
+NotebookOutlinePosition[      3162,        103]
+CellTagsIndexPosition[      3119,        100]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,31 +34,32 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"\[Gamma]", "=", "0.58"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Vto", "=", "0.59"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"Vto", "=", "0.69"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Vbs", "=", "0.2"}], ";"}]}], "Input",
  CellChangeTimes->{{3.656337322451805*^9, 3.656337414679504*^9}, {
   3.656337474900317*^9, 3.656337507667091*^9}, {3.6563375667470903`*^9, 
-  3.656337570043292*^9}}],
+  3.656337570043292*^9}, {3.656580624542134*^9, 3.6565806264695053`*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"\[Phi]", "=", 
   RowBox[{"kb", "*", 
-   RowBox[{"293", "/", "e"}], "*", 
+   RowBox[{"300", "/", "e"}], "*", 
    RowBox[{"Log", "[", 
     RowBox[{
      RowBox[{"10", "^", "21"}], "/", 
      RowBox[{"10", "^", "16"}]}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.65633741679961*^9, 3.656337452594329*^9}, {
   3.656337525110145*^9, 3.656337530013894*^9}, {3.656339877352561*^9, 
-  3.6563399531305027`*^9}}],
+  3.6563399531305027`*^9}, {3.656580357317624*^9, 3.6565803576098447`*^9}}],
 
-Cell[BoxData["0.2909460176566288`"], "Output",
+Cell[BoxData["0.29789694640610465`"], "Output",
  CellChangeTimes->{
   3.656337456356348*^9, 3.656337604043994*^9, {3.656339880713456*^9, 
-   3.6563399177081013`*^9}, 3.656339956268417*^9}]
+   3.6563399177081013`*^9}, 3.656339956268417*^9, {3.656580342740255*^9, 
+   3.656580359453143*^9}, 3.6565806288271832`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -66,23 +67,28 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"Vth", "=", 
   RowBox[{"Vto", "+", 
-   SqrtBox[
-    RowBox[{
-     RowBox[{"2", "*", "\[Phi]"}], "+", "0.2"}]], "-", 
-   SqrtBox[
-    RowBox[{"2", "*", "\[Phi]"}]]}]}]], "Input",
+   RowBox[{"\[Gamma]", 
+    RowBox[{"(", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        RowBox[{"2", "*", "\[Phi]"}], "+", "0.2"}]], "-", 
+      SqrtBox[
+       RowBox[{"2", "*", "\[Phi]"}]]}], ")"}]}]}]}]], "Input",
  CellChangeTimes->{{3.6563374692379427`*^9, 3.6563375394604473`*^9}, {
-  3.656337587492373*^9, 3.6563375993269978`*^9}}],
+  3.656337587492373*^9, 3.6563375993269978`*^9}, {3.656580327989163*^9, 
+  3.6565803361409426`*^9}}],
 
-Cell[BoxData["0.7114281106802519`"], "Output",
+Cell[BoxData["0.7597136470201822`"], "Output",
  CellChangeTimes->{
   3.656337605123712*^9, {3.656339880727764*^9, 3.6563399177207937`*^9}, 
-   3.656339956280672*^9}]
+   3.656339956280672*^9, {3.6565803434537587`*^9, 3.656580360033593*^9}, 
+   3.6565806288322225`*^9}]
 }, Open  ]]
 },
 WindowSize->{808, 621},
-WindowMargins->{{Automatic, 12}, {-40, Automatic}},
-FrontEndVersion->"10.3 for Linux x86 (64-bit) (October 9, 2015)",
+WindowMargins->{{-860, Automatic}, {-127, Automatic}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -96,18 +102,17 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 730, 21, 121, "Input"],
+Cell[558, 20, 778, 21, 112, "Input"],
 Cell[CellGroupData[{
-Cell[1313, 45, 391, 10, 32, "Input"],
-Cell[1707, 57, 187, 3, 32, "Output"]
+Cell[1361, 45, 439, 10, 31, "Input"],
+Cell[1803, 57, 262, 4, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1931, 65, 321, 9, 39, "Input"],
-Cell[2255, 76, 165, 3, 32, "Output"]
+Cell[2102, 66, 454, 13, 39, "Input"],
+Cell[2559, 81, 241, 4, 31, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
